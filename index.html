@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Empresa de moveis planejados em MDF, manutenção e cabamentos, criação de projetos e designer de interior">
+  <link rel="stylesheet" href="css/carousel.css">
+  <link rel="stylesheet" href="css/style-footer.css">
+  <link rel="stylesheet" href="css/style-formulario.css">
+  <link rel="stylesheet" href="css/style-home.css">
+  <link rel="stylesheet" href="css/style-menu.css">
+  <link rel="stylesheet" href="css/style-servicos.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.8/dist/sweetalert2.min.css">
+  <script async src="js/servicos.js"></script>
+  <script async src="js/carousel.js"></script>
+  <script async src="js/scroll.js"></script>
+  <script async src="js/returnForm.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.8/dist/sweetalert2.all.min.js"></script>
+  <script src="https://kit.fontawesome.com/80b6af24ef.js" crossorigin="anonymous"></script>
+  <title>StudioWorkArt</title>
+</head>
+<body>
+  <header id="header">
+    <div id="logo"><span>STUDIO</span><span>WORKART</span></div>
+    <input type="checkbox" name="check" id="check">
+    <label id="label-menu" for="check">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <nav id="menu">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#portfolio">Portfólio</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="home">
+      <div class="carousel">
+        <div class="carousel-item">
+          <img src="img/cozinha-carousel.jpg" alt="Cozinha Planejada">
+        </div>
+        <div class="carousel-item">
+          <img src="img/sala-de-estar-carousel.jpg" alt="Sala de estar">
+        </div>
+        <div class="carousel-item">
+          <img src="img/quarto-infantil-carousel.jpg" alt="Quarto de criança">
+        </div>
+          <!-- Adicione mais divs "carousel-item" conforme necessário -->
+        </div>
+      </div>
+      <div class="mensagem-home">
+        <h1 class="titulo-home">Transformamos Sonhos em Realidade</h1>
+        <p class="texto-home">Na StudioWorkArt, criamos móveis planejados sob medida para transformar o seu espaço em algo único. Combinando design moderno, qualidade excepcional e atenção aos detalhes, nossos móveis são projetados para atender às suas necessidades e superar suas expectativas.</p>        
+        <a class="btn-whatsapp" href="https://wa.me/seunumerodetelefone" target="_blank">Nos conte seu sonho</a>
+      </div>
+    </section>
+    
+    <section id="servicos">
+      <div class="servico">
+        <div class="text-servico">
+          <h2 class="title-servico">Criação de Projetos</h2>
+          <div class="description-servico">
+            <p>Nosso serviço de criação de projetos é feito sob medida para transformar seus sonhos em realidade. Nossa equipe de designers especializados trabalha em estreita colaboração com você para entender suas necessidades, estilo e orçamento, criando projetos únicos e personalizados que refletem sua personalidade e atendem às suas expectativas.</p>
+            <a class="btn-whatsapp" href="https://wa.me/seunumerodetelefone" target="_blank">Vamos projetar seu sonho</a>
+          </div>
+        </div>
+        <div class="servico-img">
+          <img src="img/cozinha-2d.jpg" alt="Imagem de um projeto de sala cozinha">
+        </div>
+      </div>
+
+      <div class="servico">
+        <div class="text-servico">
+          <h2 class="title-servico">Móveis Planejados</h2>
+          <div class="description-servico">
+            <p>Nossos ambientes planejados com MDF são projetados para oferecer praticidade, conforto e elegância aos seus espaços. Utilizamos o MDF de alta qualidade para criar móveis sob medida que se encaixam perfeitamente em seu ambiente, proporcionando funcionalidade e beleza incomparáveis.</p>
+            <a class="btn-whatsapp" href="https://wa.me/seunumerodetelefone" target="_blank">Vamos planejar seu sonho</a>
+          </div>
+        </div>
+        <div class="servico-img">
+          <img src="img/projeto-sala.jpg" alt="Imagem de uma sala de estar">
+        </div>
+      </div>
+      
+      <div class="servico">
+        <div class="text-servico">
+          <h2 class="title-servico">Manutenção</h2>
+          <div class="description-servico">
+            <p>A manutenção é essencial para garantir a durabilidade e a beleza dos seus móveis planejados. Nossos profissionais altamente qualificados realizam serviços de manutenção preventiva e corretiva, garantindo que seus móveis estejam sempre em perfeitas condições, livres de problemas e desgastes.</p>
+            <a class="btn-whatsapp" href="https://wa.me/seunumerodetelefone" target="_blank">Nos conte seu sonho</a>
+          </div>
+        </div>
+        <div class="servico-img">
+          <img src="img/manutenção.jpg" alt="Imagem de homem dando manutenção em um móvel">
+        </div>
+      </div>
+
+      <div class="servico">
+        <div class="text-servico">
+          <h2 class="title-servico">Acabamentos</h2>
+          <div class="description-servico">
+            <p>Nossos acabamentos são cuidadosamente selecionados para agregar valor estético e funcional aos seus móveis. Utilizamos materiais de alta qualidade e técnicas modernas para garantir acabamentos impecáveis, duráveis e que valorizam ainda mais o seu ambiente.</p>
+            <a class="btn-whatsapp" href="https://wa.me/seunumerodetelefone" target="_blank">Nos conte seu sonho</a>
+          </div>
+        </div>
+        <div class="servico-img">
+          <img src="img/acabamento.jpg" alt="Imagem de um homem dando acabamento em um móvel">
+        </div>
+      </div>
+      <!--Adicione mas serviços se for necessário-->
+    </section>
+    
+    <section id="portfolio">
+      <div class="carousel">
+        <div class="carousel-item">
+          <img class="portfolio-img" src="img/cozinha-portifolio.jpg" alt="Cozinha Planejada">
+        </div>
+        <div class="carousel-item">
+          <img class="portfolio-img" src="img/closet-portifolio.jpg" alt="Closer Planejado">
+        </div>
+        <div class="carousel-item">
+          <img class="portfolio-img" src="img/escritorio-portifolio.jpg" alt="Escritório Planejado">
+        </div>
+        <div class="carousel-item">
+          <img class="portfolio-img" src="img/sala-portifolio.jpg" alt="Sala de Estar Planejada">
+        </div>
+        <div class="carousel-item">
+          <img class="portfolio-img" src="img/quarto-casal-portifolio.jpg" alt="Quarto de Casal Planejada">
+        </div>
+        <div class="carousel-item">
+          <img class="portfolio-img" src="img/quarto-infantil-portifolio.jpg" alt="Quarto de Criança Planejado">
+        </div>
+        <!-- Adicione mais divs "carousel-item" conforme necessário -->
+        <button class="carousel-control prev" onclick="changeSlide('portfolio', -1)"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="carousel-control next" onclick="changeSlide('portfolio', 1)"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+      <div class="carousel-progress" id="portfolioProgressBar">
+        <span class="progress-item active"></span>
+        <span class="progress-item"></span>
+        <span class="progress-item"></span>
+        <span class="progress-item"></span>
+        <span class="progress-item"></span>
+        <span class="progress-item"></span>
+      </div>
+    </section>
+    <section id="contato">
+      <div id="formulario">
+        <form name="contact" method="POST" data-netlify="true">
+          <label for="name">Nome Completo</label>
+          <input type="text" name="name" id="name" placeholder="Seu nome" required>
+          <label for="email">E-mail</label>
+          <input type="email" name="email" id="email" placeholder="seu@email.com" required>
+          <label for="tel">Telefone</label>
+          <input type="tel" name="tel" id="tel" pattern="[0-9]*" minlength="11" placeholder="(77)99999-9999" required>
+          <label for="pedido">Fale um pouco do seu sonho</label>
+          <textarea name="pedido" id="pedido" rows="3" placeholder="Meu sonho é..." required></textarea>
+          <input type="submit" name="contact" value="Enviar">
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="footer flex-contener">
+    <div class="flex-contener footer-contener">
+      <div class="logo-footer">
+        <a href="#home"><img src="img/logo-workart-jpeg.png" alt="Logo"></a>
+      </div>
+      <div class="redes flex-contener">        
+        <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i>  Instagram</a>
+        <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i> Facebook</a>
+        <a href="#" target="_blank"><i class="fa-brands fa-twitter"></i> Twitter</a>
+        <a href="https://wa.me/seunumerodetelefone" target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+      </div>
+      <address class="addr">
+        <div>
+          <p><i>Rua A, 145, Boa Vista, Vitória da Conquista - BA</i></p>
+        </div>
+        <div><a href="tel:+5577900000000" target="_blank">(77)90000-0000</a></div>
+        <div>
+          <a href="mailto:" target="_blank">email@.com</a>
+        </div>
+      </address>
+    </div>
+    <div class="cop">
+      <p>&copy; 2024 SantosDEV</p>
+    </div>
+  </footer>
+</body>
+</html>

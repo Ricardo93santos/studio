@@ -1,1 +1,1 @@
-# studio
+O site StudioWorkArt foi criado com o objetivo de apresentar a singularidade e a qualidade dos serviços oferecidos pela empresa, refletindo a essência criativa e inovadora da StudioWorkArt. Com um design moderno e intuitivo, o site proporciona uma experiência única aos visitantes, convidando-os a explorar o portfólio, conhecer os serviços e entrar em contato para transformar ideias em realidade.

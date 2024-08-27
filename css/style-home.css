@@ -1,0 +1,40 @@
+#home{
+  position: relative;
+}
+#home img{
+  filter: blur(3.5px);
+  max-height: 600px;
+}
+.mensagem-home{
+  border-radius: 10px;
+  box-shadow: 3px 1px 25px -4px rgba(0, 0, 0, 0.65);
+  left: 50%;
+  max-width: 500px;
+  padding: 20px;
+  position: absolute;
+  text-align: center;
+  text-shadow: 0.07em 0.05em #333;
+  top: 55%;
+  transform: translate(-50%, -50%);
+  width: 80%; /* Tamanho ajustável */
+}
+.titulo-home{
+  color: var(--ternary-color);
+  font-size: 26px;
+  margin-bottom: 25px;
+  padding: 10px;
+}
+.texto-home{
+  color: var(--secondary-color);
+  font-family: var(--font-family);
+  font-size: 18px;
+  margin: 20px;
+}
+@media (max-width: 600px){
+  .titulo-home{
+   color: var(--secondary-color);
+  }
+  .texto-home{
+    display: none;
+  }
+}

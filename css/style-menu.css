@@ -1,0 +1,140 @@
+#check{
+  display: none;
+}
+#header{
+  align-items: center;
+  background: var(--ternary-background-color);
+  box-shadow: 3px 1px 25px -4px rgba(0, 0, 0, 0.65);
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  transition: 0.3s ease-in-out;
+  width: 100%;
+  z-index: 999;
+}
+
+/* Estilização da logo */
+#logo {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-size: var(--font-size-base-h);
+  font-weight: bold;
+  padding: 16px 20px;
+}
+
+#logo span:first-child {
+  color: var(--secondary-color); /* Cor do primeiro span (branco) */
+}
+
+#logo span:last-child {
+  color: var(--ternary-color); /* Cor do segundo span (dourado) */
+}
+
+#menu{
+  width: 50%;
+}
+
+#menu ul{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+#menu li{
+  margin: 10px 0;
+}
+
+#menu a{
+  color: var(--secondary-color);
+  font-size: 18px;
+}
+#menu a:hover{
+  color: var(--ternary-color);
+  text-shadow: 0.5px 1px 3.4px var(--primary-color);
+  transition: 0.3s ease-in-out;
+}
+@media (max-width:600px) {
+  #header{
+    justify-content: space-between;
+  } 
+  #logo span:first-child {
+    color: var(--secondary-color); /* Cor do primeiro span (branco) */
+    font-size: 16px; /* Tamanho da fonte */
+  }
+  
+  #logo span:last-child {
+    color: var(--ternary-color); /* Cor do segundo span (dourado) */
+    font-size: 19px; /* Tamanho da fonte */
+  }
+  #label-menu{
+    cursor: pointer;
+    display: block;
+    height: 16px;
+    margin-right: 22px;
+    position: relative;
+    transition: .5s ease-in-out;
+    width: 25px;
+  }
+
+  #label-menu span{
+    background: var(--primary-background-color);
+    border-radius: 30px;
+    display: block;
+    height: 2px;
+    position: absolute;
+    transition: .2s ease-in-out;
+    width: 100%;
+  }
+
+  #label-menu span:nth-child(1){
+    top: 0px;
+  }
+
+  #label-menu span:nth-child(2){
+    top: 8px;
+  }
+
+  #label-menu span:nth-child(3){
+    top: 16px;
+  }
+
+  #check:checked + #label-menu span:nth-child(1){
+    transform: rotate(-45deg);
+    top: 8px;
+  }
+
+  #check:checked + #label-menu span:nth-child(2){
+    display: none;
+  }
+
+  #check:checked + #label-menu span:nth-child(3){
+    transform: rotate(45deg);
+    top: 8px;
+  }
+
+  #menu{
+    background: var(--ternary-background-color);
+    box-shadow: 3px 1px 25px -4px rgba(0, 0, 0, 0.65);
+    display: block;
+    height: calc(100vh - 50px);
+    padding: 16px;
+    position: absolute;
+    right: -500px;
+    text-align: right;
+    top: 76px;
+    transition: .3s ease-in-out;
+    width: 60%;
+  }
+
+  #check:checked ~ #menu{
+    right: 0px;
+  }
+
+  #menu ul{
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+    width: 100%;
+  }
+}

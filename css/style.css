@@ -1,0 +1,56 @@
+/* Reset */
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+*{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+/* Cores */
+:root {
+  --primary-background-color: #f8f8f8;
+  --primary-color: #333;
+  --secondary-background-color: #333;
+  --secondary-color: #fff;
+  --ternary-background-color: #c8c8c8b3;
+  --ternary-color: #ffd700;
+}
+
+/* Estilos de texto */
+:root {
+  --font-family: "DM Serif Text", "Playfair Display", serif;
+  --font-size-base-h: clamp(1.25em, 1.25em + 1vw, 1.1em);
+  --font-size-base: clamp(1em, 1em + 1vw, 0.9em);
+  --heading-color: var(--secondary-color);
+  --heading-font-weight: bold;
+  --line-height-base: 1.6;
+}
+/* Estilização Geral*/
+img{
+  height: 100%;
+  margin: 10px;
+  width: 100%;
+}
+html{
+  scroll-behavior: smooth;
+}
+a, ul, li, span, p, label{
+  font-size: var(--font-size-base);
+}
+h1, h2{
+  font-size: var(--font-size-base-h);
+}
+body, main{
+  background: var(--primary-background-color);
+  color: var(--primary-color);
+  display: grid;
+  gap: 35px;
+}
+.portfolio-img{
+  max-height: 500px;
+  max-width: 1080px;
+}
+.btn-whatsapp{
+  color: var(--ternary-color);
+  text-transform: uppercase;
+}
