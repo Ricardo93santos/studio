@@ -21,6 +21,7 @@
   font-size: var(--font-size-base-h);
   font-weight: bold;
   padding: 16px 20px;
+  text-shadow: 0.5px 1px 3.4px var(--primary-color);
 }
 
 #logo span:first-child {
@@ -48,6 +49,7 @@
 #menu a{
   color: var(--secondary-color);
   font-size: 18px;
+  text-shadow: 0.5px 1px 3.4px var(--primary-color);
 }
 #menu a:hover{
   color: var(--ternary-color);
